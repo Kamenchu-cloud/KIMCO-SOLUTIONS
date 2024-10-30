@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import kimcoLogo from '../assets/kimco_logo.jpg';
 import searchIcon from '../assets/search.png';
 import profileIcon from '../assets/profile_icon.png';
@@ -6,10 +6,12 @@ import cartIcon from '../assets/shopping-cart.png';
 import menuIcon from '../assets/menu.png';
 import backIcon from '../assets/left.png';
 import {Link, NavLink} from 'react-router-dom';
+import { ShopContext } from '../context/ShopContext';
 
 const Navbar = () => {
 
   const [visible,setvisible] = useState(false);
+  const {setShowSearch} = useContext(ShopContext);
   
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
@@ -38,7 +40,7 @@ const Navbar = () => {
           </NavLink>
         </ul>
         <div className='flex items-center gap-6'>
-          <img src={searchIcon} className='w-5 cursor-pointer' alt="" />
+          <img onClick={()=>setShowSearch(true)} src={searchIcon} className='w-5 cursor-pointer' alt="" />
 
           <div className='group relative'>
             <img className='w-5 cursor-pointer' src={profileIcon} alt="" />
