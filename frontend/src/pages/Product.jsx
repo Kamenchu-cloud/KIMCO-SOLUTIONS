@@ -8,7 +8,7 @@ import dull_starIcon from '../assets/star_dull_icon.png';
 const Product = () => {
 
   const {productId} = useParams();
-  const {products, currency} = useContext(ShopContext);
+  const {products, currency, addToCart} = useContext(ShopContext);
   const [productData,setProductData] = useState(false);
   const [image,setImage] = useState("")
 
@@ -62,12 +62,17 @@ const Product = () => {
           </div>
           <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
           <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
-          <div className='flex flex-col gap-4 my-8'>
-            <p>Se</p>
+          <button onClick={()=>addToCart(productData._id)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700 mt-9'>ADD TO CART</button>
+          <hr className='mt-8 sm:w-4/5' />
+          <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
+            <p>Quality You Can Trust!</p>
+            <p>Free Returns within 30 Days!</p>
+            <p>100% Satisfaction Guaranteed!</p>
           </div>
         </div>
       </div>
 
+      
     </div>
   ) : <div className='opacity-0'></div>
 }
