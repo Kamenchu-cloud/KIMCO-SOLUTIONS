@@ -3,25 +3,36 @@ import heroImg from '../assets/herobanner.jpg';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col sm:flex-row border border-gray-400'>
-        {/* Hero Left Side */}
-        <div className='w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0'>
-            <div className='text-[#414141]'>
-                <div className='flex items-center gap-2'>
-                    <p className='w-8 md:w-11 h-[2px] bg-[#414141]'></p>
-                    <p className='font-medium text-sm md:text-base'>TOP SELLERS</p>
-                </div>
-                <h1 className='prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed'>New Arrivals</h1>
-                <div className='flex items-center gap-2'>
-                    <p className='font-semibold text-sm md:text-base'>Order Now</p>
-                    <p className='w-8 md:w-11 h-[1px] bg-[#414141]'></p>
-                </div>
-            </div>
+    <div className='flex flex-col sm:flex-row items-center border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+      {/* Hero Left Side */}
+      <div className='w-full sm:w-1/2 flex flex-col justify-center px-8 py-16 sm:py-0 bg-gray-50'>
+        <div className='text-gray-800 space-y-4'>
+          {/* Category Label */}
+          <div className='flex items-center gap-3'>
+            <div className='w-10 h-[3px] bg-gray-800'></div>
+            <p className='font-semibold text-sm uppercase tracking-wide text-gray-700'>Best Sellers</p>
+          </div>
+          
+          {/* Main Title */}
+          <h1 className='font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900'>
+            Office Essentials
+          </h1>
+          
+          {/* Call-to-Action */}
+          <div className='mt-6'>
+            <a href="/collection" className='inline-block px-6 py-3 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition duration-200 ease-in-out'>
+              Shop Now
+            </a>
+          </div>
         </div>
-        {/* Hero Right Side */}
-        <img className='w-full sm:w-1/2' src={heroImg} alt="" />
+      </div>
+
+      {/* Hero Right Side */}
+      <div className='w-full sm:w-1/2'>
+        <img className='w-full h-full object-cover' src={heroImg} alt="Office Supplies Banner" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

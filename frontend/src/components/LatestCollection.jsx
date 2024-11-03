@@ -17,7 +17,7 @@ const LatestCollection = () => {
         <div className='text-center py-8 text-3xl'>
             <Title text1={"Limited-Time"} text2={"Offer"}/>
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, laboriosam eveniet. Temporibus, excepturi. A, ea alias dignissimos atque accusantium animi repudiandae, optio voluptatibus maiores cumque aliquam eos, dicta est facere?
+            Discover our exclusive collection of top-quality office essentials, designed to elevate productivity and style in your workspace. Whether you're refreshing your home office or upgrading a corporate environment, this limited-time selection offers the perfect blend of functionality and sophistication. Browse our latest products and bring efficiency and elegance to every task.
             </p>
         </div>
         
