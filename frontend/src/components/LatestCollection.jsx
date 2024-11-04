@@ -20,7 +20,7 @@ const LatestCollection = () => {
                     {/* <p className="font-semibold text-sm uppercase tracking-wide text-gray-700">Latest Collection</p> */}
                 </div>
                 {/* <Title text1="Limited-Time" text2="Offer" /> */}
-                <p className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto text-gray-900 text-medium sm:text-base leading-relaxed">
+                <p className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto text-gray-900 text-sm sm:text-base leading-relaxed">
                     Elevate your workspace with essentials crafted for style and productivity. Don’t miss out!
                 </p>
             </div>

@@ -9,8 +9,8 @@ const NewsLetterBox = () => {
   return (
     <div className='text-center'>
         <p className='text-2xl font-medium text-gray-800'>Subscribe now and get 20% off</p>
-        <p className='text-gray-400 mt-3'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit error quidem eius nihil repellendus. Voluptate odit suscipit distinctio quisquam nemo nesciunt autem voluptates enim. Nihil doloremque ipsa fuga omnis sint?
+        <p className='text-gray-600 mt-3'>
+            Stay ahead in your workspace with the latest updates, exclusive discounts, and essential office supplies tips. Join our community to enhance productivity and make the most of your workday.
         </p>
         <form onSubmit={onSubmitHandler} className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
             <input className='w-full sm:flex-1 outline-none' type="email" placeholder='Enter Your Email' required/>
@@ -20,4 +20,4 @@ const NewsLetterBox = () => {
   )
 }
 
-export default NewsLetterBox 
+export default NewsLetterBox
